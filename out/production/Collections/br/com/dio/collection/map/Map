@@ -1,0 +1,18 @@
+[x] Iniciar
+https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/util/Map.html
+[x] toString()
+[x] put()
+[x] containsKey() verifica se a key existe(retorna boolena)
+[x] get() recebe a key e retorna o valor
+[] keySet() exibe a key
+[] values exive o valor
+[] entrySet();
+[] getValue();
+[] getKey();
+[] iterator()
+[] iterator().hasNext()
+[] iterator().next()
+[] LinkedHashMap()
+[] new TreeMap()
+[] clear()
+[] isEmpty()
