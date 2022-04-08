@@ -109,7 +109,7 @@ public class VisaoGeralStream {
         for (Gato g : meusGatosOrdem) {//exibe a lista
             System.out.println(g.getNome() + " " + g.getIdade() + " " + g.getCor());
         }*/
-        //como a professora encinou
+        //como a professora ensinou
 
         //Objeto comparator que faz a comparação de acordo com a ordem dos atributos.
         Comparator<Gato> comparator = Comparator.comparing(Gato::getNome)
