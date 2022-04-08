@@ -80,6 +80,9 @@ public class VisaoGeralStream {
         /**
          *  Ordenta a lista comparando pelo nome-> idade -> cor.
          */
+
+/*
+        como eu estava tentando fazer
         //uso da classe Anõnima
         meusGatosOrdem.sort(Comparator.comparing(new Function<Gato, String>() {
             @Override
@@ -91,6 +94,8 @@ public class VisaoGeralStream {
                 return gato.getCor();
             }
         }));
+
+
         //usando Labda
 //        meusGatosOrdem.sort(Comparator.comparing((Gato gato) ->
 //                if ((gato.getNome().equalsIgnoreCase(gato.getNome())))
@@ -103,6 +108,17 @@ public class VisaoGeralStream {
         //Referencia do Método (Reference Method)
         for (Gato g : meusGatosOrdem) {//exibe a lista
             System.out.println(g.getNome() + " " + g.getIdade() + " " + g.getCor());
-        }
+        }*/
+        //como a professora encinou
+
+        //Objeto comparator que faz a comparação de acordo com a ordem dos atributos.
+        Comparator<Gato> comparator = Comparator.comparing(Gato::getNome)
+                .thenComparing(Gato::getIdade)
+                .thenComparing(Gato::getCor);
+
+        //A chamada dessa classe Collections com o método sort, é quem faz a ordenação.
+        Collections.sort(meusGatos, comparator);
+
+        meusGatos.forEach(g -> System.out.println(g.getNome() + " " + g.getIdade() + " " + g.getCor()));
     }
 }
